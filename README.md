@@ -19,14 +19,14 @@ node cli.mjs boot       # 启动 headless 模拟器，等到 boot_completed 才�
 node cli.mjs status     # 查看环境状态
 ```
 
-把 MCP server 挂到任意 MCP 客户端（ZCode / Claude Desktop / Cursor 等）：
+把 MCP server 挂到任意 MCP 客户端（ZCode / Claude Desktop / Cursor 等），`args` 换成你本项目的实际路径：
 
 ```json
 {
   "mcpServers": {
     "android-dev-vm": {
       "command": "node",
-      "args": ["D:\\code\\DeepSeekHarness\\android-dev-vm-mcp-2026-10-25\\src\\server.mjs"]
+      "args": ["<项目文件夹绝对路径>\\src\\server.mjs"]
     }
   }
 }
