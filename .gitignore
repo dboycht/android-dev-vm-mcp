@@ -1,0 +1,11 @@
+# runtime data & dev-only docs stay local, never pushed
+node_modules/
+sdk/
+avd/
+data/
+.android-home/
+.tmp/
+*.log
+*.part
+DEVELOPMENT.md
+ERROR.md

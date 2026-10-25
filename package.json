@@ -1,0 +1,28 @@
+{
+  "name": "android-dev-vm-mcp",
+  "version": "1.0.1",
+  "description": "Self-contained Android emulator dev VM managed over MCP: one-command SDK bootstrap, headless AVD, and 25 debugging/automation tools for AI agents.",
+  "type": "module",
+  "main": "src/server.mjs",
+  "bin": {
+    "android-dev-vm-mcp": "cli.mjs"
+  },
+  "scripts": {
+    "mcp": "node src/server.mjs",
+    "setup": "node cli.mjs setup",
+    "boot": "node cli.mjs boot",
+    "shutdown": "node cli.mjs shutdown",
+    "status": "node cli.mjs status",
+    "selftest": "node scripts/selftest.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "fast-xml-parser": "^5.2.0",
+    "zod": "^3.25.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true,
+  "license": "MIT"
+}
